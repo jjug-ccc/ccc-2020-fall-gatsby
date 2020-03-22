@@ -47,14 +47,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-rest-api',
-      options: {
-        endpoints: [
-          'https://jjug-cfp.cfapps.io/v1/conferences/4abde357-9994-4578-b760-a1698ff6f338/submissions'
-        ]
-      }
-    },
-    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
