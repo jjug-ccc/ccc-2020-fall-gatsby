@@ -3,9 +3,6 @@ import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
-import {func} from "prop-types";
-
-const joinedName = ( speakers ) => speakers.map((speaker) => (speaker.name)).join('／');
 
 const SubmissionsPage = ({
   data: { allInternalSubmissions },
@@ -38,7 +35,7 @@ const SubmissionsPage = ({
             {allInternalSubmissions.nodes.map(( data ) => (
               <tr key={data.id}>
                 <td><Link to={`/submissions/${kebabCase(data.id)}/`}>{data.title}</Link></td>
-                <td>{ joinedName(data.speakers) }</td>
+                <td>名前</td>
               </tr>
             ))}
           </table>
