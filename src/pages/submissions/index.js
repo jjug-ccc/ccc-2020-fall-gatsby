@@ -1,4 +1,5 @@
 import React from 'react'
+import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
@@ -35,7 +36,7 @@ const SubmissionsPage = ({
             </thead>
             {allInternalSubmissions.nodes.map(( data ) => (
               <tr key={data.id}>
-                <td><Link to={`/submissions/${data.id}/`}>{data.title}</Link></td>
+                <td><Link to={`/submissions/${kebabCase(data.id)}/`}>{data.title}</Link></td>
                 <td>{ joinedName(data.speakers) }</td>
               </tr>
             ))}
