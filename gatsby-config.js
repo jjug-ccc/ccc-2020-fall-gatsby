@@ -134,7 +134,6 @@ module.exports = {
         setup (ref) {
           const ret = ref.query.site.siteMetadata.rssMetadata
           ret.allMarkdownRemark = ref.query.allMarkdownRemark
-          ret.allInternalSubmissions = ref.query.allInternalSubmissions;
           ret.generator = config.siteTitle
           return ret
         },
@@ -201,57 +200,6 @@ module.exports = {
             output: config.siteRss,
             title: config.siteTitle,
           },
-          {
-            serialize (ctx) {
-              return ctx.query.allInternalSubmissions.edges
-                .map(edge => ({
-                  title: edge.node.title,
-                  level: edge.node.level,
-                  target: edge.node.target,
-                  category: edge.node.category,
-                  description: edge.node.description,
-                  speakers: [
-                    {
-                      profileUrl: edge.node.speakers.profileUrl,
-                      name: edge.node.speakers.name,
-                      companyOrCommunity: edge.node.speakers.companyOrCommunity,
-                      activityList: {
-                        url: edge.node.speakers.activityList.url,
-                        activityType: edge.node.speakers.activityList.activityType
-                      },
-                      bio: edge.node.speakers.profileUrl,
-                    }
-                  ],
-                }))
-            },
-            query: `
-                    {
-                      allInternalSubmissions {
-                        edges {
-                          node {
-                            title
-                            level
-                            target
-                            category
-                            description
-                            speakers {
-                              profileUrl
-                              name
-                              companyOrCommunity
-                              activityList {
-                                url
-                                activityType
-                              }
-                              bio
-                            }
-                          }
-                        }
-                      }
-                    }
-                  `,
-            output: config.siteRss,
-            title: config.siteTitle,
-          }
         ],
       },
     },

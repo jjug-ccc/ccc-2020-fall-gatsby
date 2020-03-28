@@ -4,7 +4,7 @@ const { createFilePath } = require('gatsby-source-filesystem')
 const createPaginatedPages = require('gatsby-paginate')
 
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions;
+  const { createPage } = actions
 
   return graphql(`
     {
@@ -22,28 +22,6 @@ exports.createPages = ({ actions, graphql }) => {
               tags
               templateKey
               date(formatString: "MMMM DD, YYYY")
-            }
-          }
-        }
-      }
-      allInternalSubmissions {
-        edges {
-          node {
-            id
-            title
-            level
-            target
-            category
-            description
-            speakers {
-              profileUrl
-              name
-              companyOrCommunity
-              activityList {
-                url
-                activityType
-              }
-              bio
             }
           }
         }
@@ -112,33 +90,11 @@ exports.createPages = ({ actions, graphql }) => {
         },
       })
     })
-
-    // Session Pages:
-    const sessionsAndPages = result.data.allInternalSubmissions.edges;
-    let sessionIds = [];
-    sessionsAndPages
-      .filter(( edge ) => edge.node.id !== "dummy")
-      .forEach(edge => {
-        sessionIds = sessionIds.concat(edge.node.id);
-      });
-
-    sessionIds.forEach(sessionId => {
-      const sessionPath = `/sessions/${sessionId}`;
-
-      createPage({
-          path: sessionPath,
-          component: path.resolve(`src/templates/sessions.js`),
-          context: {
-            sessionId
-          }
-        }
-      )
-    })
   })
-};
+}
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions;
+  const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
@@ -148,12 +104,4 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       value,
     })
   }
-  if (node.internal.type === `internal__submissions`) {
-    const value = getNode(node.id);
-    createNodeField({
-      name: `sessions`,
-      node,
-      value
-    })
-  }
-};
+}
