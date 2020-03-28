@@ -5,20 +5,19 @@ import Layout from '../components/Layout'
 
 class SessionRoute extends Component {
   render () {
-    const post = this.props.data.allInternalSubmissions.edges[0].node;
-    const title = this.props.data.site.siteMetadata.title;
+    const posts = this.props.data.allInternalSubmissions.edges;
+    console.log(posts.node);
 
     return (
       <Layout>
         <section className='section'>
-          <Helmet title={`${post.title} | ${title}`} />
           <div className='container content'>
             <div className='columns'>
               <div
                 className='column is-10 is-offset-1'
                 style={{ marginBottom: '6rem' }}
               >
-                <h3 className='title is-size-4 is-bold-light'>{post.title}</h3>
+                <h3 className='title is-size-4 is-bold-light'>ぐええ</h3>
               </div>
             </div>
           </div>
@@ -37,7 +36,7 @@ export const sessionPageQuery = graphql`
         title
       }
     }
-    allInternalSubmissions(filter: {id: {eq: $sessionId}}, limit: 1) {
+    allInternalSubmissions(filter: {id: {eq: $sessionId}}) {
       edges {
         node {
           id
