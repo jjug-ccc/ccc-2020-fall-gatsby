@@ -3,21 +3,6 @@ import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
-function ActivityList(props) {
-  if (props.activityList.length <= 0) {
-    return null;
-  }
-  return (
-    <nav className='level is-mobile'>
-      <div className='level-left'>
-        {props.activityList.map((activity, index) => {
-          return (<a key={`${props.postId}-${props.speakerIndex}-${index}`} className='level-item' href={activity.url}>Twitter</a>);
-        })}
-      </div>
-    </nav>
-  );
-}
-
 class SessionRoute extends Component {
   render () {
     const post = this.props.data.allInternalSubmissions.edges[0].node;
@@ -45,9 +30,9 @@ class SessionRoute extends Component {
                   <dd>{post.description}</dd>
                   <dt>スピーカー / Speaker</dt>
                   <dd>
-                    {post.speakers.map((speaker, speakerIndex) => {
+                    {post.speakers.map((speaker, index) => {
                       return (
-                        <article key={speakerIndex} className='media'>
+                        <article key={index} className='media'>
                           <figure className='media-left'>
                             <p className='image is-64x64'><img src={speaker.profileUrl} alt={speaker.name} /></p>
                           </figure>
@@ -59,7 +44,6 @@ class SessionRoute extends Component {
                                 {speaker.bio}
                               </p>
                             </div>
-                            <ActivityList activityList={speaker.activityList} postId={post.id} speakerIndex={speakerIndex} />
                           </div>
                         </article>
                       );
