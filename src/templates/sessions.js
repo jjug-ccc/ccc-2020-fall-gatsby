@@ -19,19 +19,6 @@ function ActivityList(props) {
   );
 }
 
-function LevelTag(props) {
-  switch (props.level) {
-    case 'BEGINNER':
-      return (<span className='tag is-info'>初心者向け</span>);
-    case 'INTERMEDIATE':
-      return (<span className='tag is-warning'>中級者向け</span>);
-    case 'ADVANCED':
-      return (<span className='tag is-danger'>上級者向け</span>);
-    default:
-      return null;
-  }
-}
-
 class SessionRoute extends Component {
   rawMarkUp(value) {
     const markDown = new Remarkable();
@@ -52,7 +39,9 @@ class SessionRoute extends Component {
                 className='column is-10 is-offset-1'
                 style={{ marginBottom: '6rem' }}
               >
-                <h3 className='title is-size-3 is-bold-light'>{post.title} <LevelTag level={post.level} /></h3>
+                <h3 className='title is-size-3 is-bold-light'>{post.title}</h3>
+                <h4 className='is-size-4'>レベル / Level</h4>
+                <p>{post.level}</p>
                 <h4 className='is-size-4'>ターゲット / Target</h4>
                 <p>{post.target}</p>
                 <h4 className='is-size-4'>カテゴリ / Category</h4>
