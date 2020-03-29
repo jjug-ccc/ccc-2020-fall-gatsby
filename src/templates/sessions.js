@@ -25,43 +25,47 @@ class SessionRoute extends Component {
 
     return (
       <Layout>
-        <Helmet title={`${post.title} | ${title}`} />
         <section className='section'>
+          <Helmet title={`${post.title} | ${title}`} />
           <div className='container content'>
             <div className='columns'>
               <div
                 className='column is-10 is-offset-1'
                 style={{ marginBottom: '6rem' }}
               >
-                <h3 className='title is-size-3 is-bold-light'>{post.title}</h3>
-                <h4 className='is-size-4'>レベル / Level</h4>
-                <p>{post.level}</p>
-                <h4 className='is-size-4'>ターゲット / Target</h4>
-                <p>{post.target}</p>
-                <h4 className='is-size-4'>カテゴリ / Category</h4>
-                <p>{post.category}</p>
-                <h4 className='is-size-4'>概要 / Description</h4>
-                <p>{post.description}</p>
-                <h4 className='is-size-4'>スピーカー / Speaker</h4>
-                {post.speakers.map((speaker, speakerIndex) => {
-                  return (
-                    <article key={speakerIndex} className='media'>
-                      <figure className='media-left'>
-                        <p className='image is-64x64'><img src={speaker.profileUrl} alt={speaker.name} /></p>
-                      </figure>
-                      <div className='media-content'>
-                        <div className='content'>
-                          <p>
-                            <strong>{speaker.name}</strong> <small>{speaker.companyOrCommunity}</small>
-                            <br />
-                            {speaker.bio}
-                          </p>
-                        </div>
-                        <ActivityList activityList={speaker.activityList} postId={post.id} speakerIndex={speakerIndex} />
-                      </div>
-                    </article>
-                  );
-                })}
+                <h3 className='title is-size-4 is-bold-light'>{post.title}</h3>
+                <dl>
+                  <dt>レベル / Level</dt>
+                  <dd>{post.level}</dd>
+                  <dt>ターゲット / Target</dt>
+                  <dd>{post.target}</dd>
+                  <dt>カテゴリ / Category</dt>
+                  <dd>{post.category}</dd>
+                  <dt>概要 / Description</dt>
+                  <dd>{post.description}</dd>
+                  <dt>スピーカー / Speaker</dt>
+                  <dd>
+                    {post.speakers.map((speaker, speakerIndex) => {
+                      return (
+                        <article key={speakerIndex} className='media'>
+                          <figure className='media-left'>
+                            <p className='image is-64x64'><img src={speaker.profileUrl} alt={speaker.name} /></p>
+                          </figure>
+                          <div className='media-content'>
+                            <div className='content'>
+                              <p>
+                                <strong>{speaker.name}</strong> <small>{speaker.companyOrCommunity}</small>
+                                <br />
+                                {speaker.bio}
+                              </p>
+                            </div>
+                            <ActivityList activityList={speaker.activityList} postId={post.id} speakerIndex={speakerIndex} />
+                          </div>
+                        </article>
+                      );
+                    })}
+                  </dd>
+                </dl>
               </div>
             </div>
           </div>
