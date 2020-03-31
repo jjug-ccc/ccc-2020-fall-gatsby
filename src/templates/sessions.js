@@ -38,32 +38,6 @@ class SessionRoute extends Component {
     const rawMarkup = markDown.render(value);
     return { __html: rawMarkup };
   }
-
-  convertCategory(value) {
-    switch (value) {
-      case 'JAVA_SE':
-        return 'Java SE';
-      case 'SERVER_SIDE_JAVA':
-        return 'Server Side Java';
-      case 'JVM':
-        return 'JVM';
-      case 'EMBEDDED':
-        return 'Embedded';
-      case 'ALTERNATE_LANGUAGE':
-        return 'Alternate Language';
-      case 'DEV_OPS':
-        return 'Dev Ops';
-      case 'CLOUD':
-        return 'Cloud';
-      case 'MOBILE':
-        return 'Mobile';
-      case 'OTHERS':
-        return 'その他';
-      default:
-        return '';
-    }
-  }
-
   render () {
     const post = this.props.data.allInternalSubmissions.edges[0].node;
     const title = this.props.data.site.siteMetadata.title;
@@ -82,7 +56,7 @@ class SessionRoute extends Component {
                 <h4 className='is-size-4'>ターゲット / Target</h4>
                 <p>{post.target}</p>
                 <h4 className='is-size-4'>カテゴリ / Category</h4>
-                <p>{this.convertCategory(post.category)}</p>
+                <p>{post.category}</p>
                 <h4 className='is-size-4'>概要 / Description</h4>
                 <p dangerouslySetInnerHTML={this.rawMarkUp(post.description)} />
                 <h4 className='is-size-4'>スピーカー / Speaker</h4>
