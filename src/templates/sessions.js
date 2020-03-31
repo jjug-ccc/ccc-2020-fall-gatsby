@@ -12,28 +12,7 @@ function ActivityList(props) {
     <nav className='level is-mobile'>
       <div className='level-left'>
         {props.activityList.map((activity, index) => {
-          let type;
-          switch (activity.activityType) {
-            case 'TWITTER':
-              type = 'Twitter';
-              break;
-            case 'FACEBOOk':
-              type = 'Facebook';
-              break;
-            case 'SLIDE_SHARE':
-              type = 'Slide Share';
-              break;
-            case 'GITHUB':
-              type = 'GitHub';
-              break;
-            case 'OTHER':
-              type = 'その他';
-              break;
-            default:
-              type = 'その他';
-              break;
-          }
-          return (<a key={`${props.postId}-${props.speakerIndex}-${index}`} className='level-item' href={activity.url} target="_blank" rel="noopener noreferrer">{type}</a>);
+          return (<a key={`${props.postId}-${props.speakerIndex}-${index}`} className='level-item' href={activity.url}>Twitter</a>);
         })}
       </div>
     </nav>
