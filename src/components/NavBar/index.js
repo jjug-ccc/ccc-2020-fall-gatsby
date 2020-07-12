@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link, graphql, StaticQuery } from 'gatsby'
-import SearchBox from '../SearchBox'
 
 const NavBar = ({ toggleNavbar, isActive }) => (
   <StaticQuery
@@ -29,7 +28,6 @@ const NavBar = ({ toggleNavbar, isActive }) => (
         </div>
         <div className={`navbar-menu ${isActive ? 'is-active' : ''}`} id='navMenu'>
           <div className='navbar-end'>
-            <Link className='navbar-item' to='/about'>About</Link>
             <Link className='navbar-item' to='/coc'>CoC</Link>
             <Link className='navbar-item' to='/blog'>Blog</Link>
           </div>
