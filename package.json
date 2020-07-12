@@ -42,8 +42,8 @@
     "gatsby-remark-images": "^3.1.22",
     "gatsby-remark-prismjs": "^3.3.13",
     "gatsby-remark-relative-images": "^0.2.3",
-    "gatsby-source-apiserver": "^2.1.4",
     "gatsby-source-filesystem": "^2.1.22",
+    "gatsby-source-rest-api": "^0.2.3",
     "gatsby-transformer-remark": "^2.6.22",
     "gatsby-transformer-sharp": "^2.2.14",
     "lodash": "^4.17.15",
@@ -57,7 +57,6 @@
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
     "react-share": "^3.0.1",
-    "sharp": "^0.25.2",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "yup": "^0.27.0"
   },
