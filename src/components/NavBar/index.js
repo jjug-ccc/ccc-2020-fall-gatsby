@@ -33,7 +33,6 @@ const NavBar = ({ toggleNavbar, isActive }) => (
             <Link className='navbar-item' to='/about'>About</Link>
             <Link className='navbar-item' to='/coc'>CoC</Link>
             <Link className='navbar-item' to='/pricing'>Pricing</Link>
-            <Link className='navbar-item' to='/sessions'>Sessions</Link>
             <Link className='navbar-item' to='/blog'>Blog</Link>
             <div className='navbar-item'>
               <div className='field is-grouped'>
