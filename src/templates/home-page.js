@@ -14,6 +14,7 @@ const HomePage = ({ data }) => {
         meta_title={frontmatter.meta_title}
         meta_description={frontmatter.meta_description}
         heading={frontmatter.heading}
+        aboutCcc={frontmatter.aboutCcc}
         description={frontmatter.description}
         offerings={frontmatter.offerings}
       />
@@ -39,6 +40,14 @@ export const pageQuery = graphql`
         meta_title
         meta_description
         heading
+        aboutCcc {
+          description
+          descriptionEn
+          organizer
+          date
+          participationFee
+          hashtag
+        }
         description
         offerings {
           blurbs {

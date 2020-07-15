@@ -9,6 +9,7 @@ const HomePageTemplate = ({
   title,
   heading,
   description,
+  aboutCcc,
   offerings,
   meta_title,
   meta_description,
@@ -40,7 +41,7 @@ const HomePageTemplate = ({
             <div className='column is-10 is-offset-1'>
               <div className='content'>
                 <h3 className='has-text-weight-semibold is-size-3'>開催概要 / Description</h3>
-                <CccDescription/>
+                <CccDescription gridItem={aboutCcc} />
                 <h3 className='has-text-weight-semibold is-size-3'>JJUGについて / About JJUG</h3>
                 <AboutJjug/>
                 <Offerings gridItems={offerings.blurbs} />
@@ -65,7 +66,14 @@ HomePageTemplate.propTypes = {
   meta_description: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,
-  cccDescription: PropTypes.string,
+  aboutCcc: PropTypes.shape({
+    description: PropTypes.string,
+    descriptionEn: PropTypes.string,
+    organizer: PropTypes.string,
+    date: PropTypes.string,
+    participationFee: PropTypes.string,
+    hashtag: PropTypes.string,
+  }),
   offerings: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
