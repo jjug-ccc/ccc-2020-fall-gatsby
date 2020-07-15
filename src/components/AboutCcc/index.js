@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CccDescription = ({ gridItem }) => (
+const AboutCcc = ({ gridItem }) => (
   <div>
     <p>{gridItem.description}</p>
     <p>{gridItem.descriptionEn}</p>
@@ -18,4 +18,4 @@ const CccDescription = ({ gridItem }) => (
   </div>
 );
 
-export default CccDescription
+export default AboutCcc

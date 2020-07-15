@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Offerings from '../Offerings'
 import PropTypes from 'prop-types'
-import CccDescription from "../CccDescription";
+import AboutCcc from "../AboutCcc";
 import AboutJjug from "../AboutJjug";
 
 const HomePageTemplate = ({
@@ -41,7 +41,7 @@ const HomePageTemplate = ({
             <div className='column is-10 is-offset-1'>
               <div className='content'>
                 <h3 className='has-text-weight-semibold is-size-3'>開催概要 / Description</h3>
-                <CccDescription gridItem={aboutCcc} />
+                <AboutCcc gridItem={aboutCcc} />
                 <h3 className='has-text-weight-semibold is-size-3'>JJUGについて / About JJUG</h3>
                 <AboutJjug/>
                 <Offerings gridItems={offerings.blurbs} />
