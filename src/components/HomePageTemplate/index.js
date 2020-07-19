@@ -8,8 +8,6 @@ import Coc from "../Coc";
 
 const HomePageTemplate = ({
   title,
-  heading,
-  description,
   aboutCcc,
   offerings,
   meta_title,
@@ -48,12 +46,6 @@ const HomePageTemplate = ({
                 <h3 className='has-text-weight-semibold is-size-3'>JJUG CCCでの行動規範 / JJUG CCC Code of Conduct</h3>
                 <Coc />
                 <Offerings gridItems={offerings.blurbs} />
-                <div>
-                  <h3 className='has-text-weight-semibold is-size-2'>
-                    {heading}
-                  </h3>
-                  <p>{description}</p>
-                </div>
               </div>
             </div>
           </div>
@@ -67,8 +59,6 @@ HomePageTemplate.propTypes = {
   title: PropTypes.string,
   meta_title: PropTypes.string,
   meta_description: PropTypes.string,
-  heading: PropTypes.string,
-  description: PropTypes.string,
   aboutCcc: PropTypes.shape({
     description: PropTypes.string,
     descriptionEn: PropTypes.string,
