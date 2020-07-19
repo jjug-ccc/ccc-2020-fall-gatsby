@@ -1,7 +1,7 @@
 ---
 templateKey: 'home-page'
 title: JJUG CCC 2020 Fall
-meta_title: Home | JJUG CCC 2020 Fall
+meta_title: JJUG CCC 2020 Fall
 meta_description: >-
   JJUG CCC 2020 Fall/Japan Java User Group Cross Community Conference 2020 Fall
 heading: Lorem ipsum dolor sit amet
