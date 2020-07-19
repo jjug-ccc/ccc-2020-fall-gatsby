@@ -26,11 +26,6 @@ const NavBar = ({ toggleNavbar, isActive }) => (
             <span />
           </button>
         </div>
-        <div className={`navbar-menu ${isActive ? 'is-active' : ''}`} id='navMenu'>
-          <div className='navbar-end'>
-            <Link className='navbar-item' to='/coc'>CoC</Link>
-          </div>
-        </div>
       </nav>
     )}
   />

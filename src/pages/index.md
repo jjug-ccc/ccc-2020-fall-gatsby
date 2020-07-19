@@ -1,13 +1,16 @@
 ---
 templateKey: 'home-page'
 title: JJUG CCC 2020 Fall
-meta_title: Home | JJUG CCC 2020 Fall
+meta_title: JJUG CCC 2020 Fall
 meta_description: >-
   JJUG CCC 2020 Fall/Japan Java User Group Cross Community Conference 2020 Fall
-heading: Lorem ipsum dolor sit amet
-description: >-
-  Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
-  adipisci velit...
+aboutCcc:
+  description: JJUG CCCは毎年2回、春と秋に開催する日本最大のJavaコミュニティイベントです。Java関連の技術や事例に関する良質なセッションが行われ、また異なる分野で活躍するJava技術者が一堂に会する場ともなっています。ぜひご参加ください。
+  descriptionEn: JJUG CCC is the largest Java community event organized by Japan Java User Group (JJUG), held twice a year in spring and autumn. It provides great sessions of Java-related technologies and practices, and brings together Java engineers from different disciplines.
+  organizer: 日本Javaユーザグループ / Japan Java User Group
+  date: 2020年11月07日（土） / 7th Nov. 2020 (Sat)
+  participationFee: 無料 / Free
+  hashtag: （セッションごとのハッシュタグあり / We will also use separate hashtags for each session）
 offerings:
   blurbs:
     - image: /img/coffee.png
