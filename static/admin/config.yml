@@ -31,15 +31,6 @@ collections:
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Meta Title", name: "meta_title", widget: "string"}
           - {label: "Meta Description", name: "meta_description", widget: "text"}
-      - file: "src/pages/coc/index.md"
-        label: "Coc"
-        name: "coc"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "coc-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
-          - {label: "Meta Title", name: "meta_title", widget: "string"}
-          - {label: "Meta Description", name: "meta_description", widget: "text"}
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
