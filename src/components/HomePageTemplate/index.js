@@ -4,6 +4,7 @@ import Offerings from '../Offerings'
 import PropTypes from 'prop-types'
 import AboutCcc from "../AboutCcc";
 import AboutJjug from "../AboutJjug";
+import Coc from "../Coc";
 
 const HomePageTemplate = ({
   title,
@@ -44,6 +45,8 @@ const HomePageTemplate = ({
                 <AboutCcc gridItem={aboutCcc} />
                 <h3 className='has-text-weight-semibold is-size-3'>JJUGについて / About JJUG</h3>
                 <AboutJjug/>
+                <h3 className='has-text-weight-semibold is-size-3'>JJUG CCCでの行動規範 / JJUG CCC Code of Conduct</h3>
+                <Coc />
                 <Offerings gridItems={offerings.blurbs} />
                 <div>
                   <h3 className='has-text-weight-semibold is-size-2'>
