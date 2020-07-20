@@ -45,7 +45,7 @@ const HomePageTemplate = ({
                 <AboutJjug/>
                 <h3 className='has-text-weight-semibold is-size-3'>JJUG CCCでの行動規範 / JJUG CCC Code of Conduct</h3>
                 <Coc />
-                <Offerings gridItems={offerings.blurbs} />
+                {/*<Offerings gridItems={offerings.blurbs} />*/}
               </div>
             </div>
           </div>
