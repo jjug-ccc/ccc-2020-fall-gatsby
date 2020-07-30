@@ -15,6 +15,8 @@ const AboutCcc = ({ gridItem }) => (
       <dt>ハッシュタグ / Hashtag</dt>
       <dd><a href="https://twitter.com/search?q=%23jjug_ccc" target="blank" rel="noopener">#jjug_ccc</a>{gridItem.hashtag}</dd>
     </dl>
+
+    <p><b>{gridItem.method}</b></p>
   </div>
 );
 

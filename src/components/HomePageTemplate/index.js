@@ -66,6 +66,7 @@ HomePageTemplate.propTypes = {
     date: PropTypes.string,
     participationFee: PropTypes.string,
     hashtag: PropTypes.string,
+    method: PropTypes.string,
   }),
   offerings: PropTypes.shape({
     blurbs: PropTypes.array,

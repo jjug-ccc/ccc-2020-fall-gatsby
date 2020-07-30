@@ -44,6 +44,7 @@ export const pageQuery = graphql`
           date
           participationFee
           hashtag
+          method
         }
         offerings {
           blurbs {

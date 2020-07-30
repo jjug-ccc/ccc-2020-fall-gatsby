@@ -11,6 +11,7 @@ aboutCcc:
   date: 2020年11月07日（土） / 7th Nov. 2020 (Sat)
   participationFee: 無料 / Free
   hashtag: （セッションごとのハッシュタグあり / We will also use separate hashtags for each session）
+  method: ※今回はオンライン開催になります。 / This conference will be held online. 
 offerings:
   blurbs:
     - image: /img/coffee.png
