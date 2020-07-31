@@ -22,8 +22,7 @@ const Coc = () => (
     </ul>
     <p>以下の方法でも連絡できます。</p>
     <ul>
-      <li>＜メールアドレス＞</li>
-      <li>＜Google Form＞</li>
+      <li>jjug.ccc@gmail.com</li>
     </ul>
     <p>JJUG幹事会は，ハラスメントにあった方が，イベント中に安全かつ安心と感じられるように，以下のような対応を行います。</p>
     <ul>
@@ -47,8 +46,7 @@ const Coc = () => (
     </p>
     <p>If you are being harassed, notice somebody else is being harassed, or have any other concerns, please contact a member of JJUG staff immediately. The staff can be identified as they are wearing an armband. If you do not find any of them, ask someone wearing an event T-shirt.</p>
     <ul>
-      <li>＜メールアドレス＞</li>
-      <li>＜Google Form＞</li>
+      <li>jjug.ccc@gmail.com</li>
     </ul>
     <p>JJUG will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the event.</p>
     <p><b>We value your attendance.</b></p>
