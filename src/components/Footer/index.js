@@ -15,9 +15,9 @@ const Footer = () => {
             </div>
             <div className='column is-one-quarter'>
               <h3>About Us</h3>
-              <p><a href="http://www.java-users.jp/?page_id=7" target="_blank" rel="noopener noreferrer" >JJUGについて</a></p>
-              <p><a href="http://www.java-users.jp/?page_id=18"  target="_blank" rel="noopener noreferrer" >入会案内</a></p>
-              <p><a href="http://www.java-users.jp/?page_id=166" target="_blank" rel="noopener noreferrer" >幹事会メンバー</a></p>
+              <p><a href="https://www.java-users.jp/page/about/" target="_blank" rel="noopener noreferrer" >JJUGについて</a></p>
+              <p><a href="https://www.java-users.jp/page/membership/"  target="_blank" rel="noopener noreferrer" >入会案内</a></p>
+              <p><a href="https://www.java-users.jp/staff/" target="_blank" rel="noopener noreferrer" >幹事会メンバー</a></p>
             </div>
             <div className='column is-one-quarter'>
               <h3>Follow</h3>
