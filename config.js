@@ -1,7 +1,7 @@
 module.exports = {
   siteTitle: 'JJUG CCC 2020 Fall',
   siteTitleAlt: 'JJUG CCC',
-  siteLogo: '/icons/icon-512x512.png',
+  siteLogo: '/icons/logo_512.png',
   siteUrl: 'https://ccc2020fall.java-users.jp/',
   pathPrefix: '',
   siteDescription: 'JJUG CCC 2020 Fall/Japan Java User Group Cross Community Conference 2020 Fall',

@@ -17,7 +17,7 @@ const SE0 = ({ title, meta_title, meta_desc, cover, slug, date }) => {
         item: {
           '@id': config.siteUrl,
           name: 'Home',
-          image: config.siteUrl + '/icons/icon-512x512.png',
+          image: config.siteUrl + '/icons/logo_192.png',
         },
       },
       {
@@ -58,7 +58,7 @@ const SE0 = ({ title, meta_title, meta_desc, cover, slug, date }) => {
       name: config.siteTitle,
       logo: {
         '@type': 'ImageObject',
-        url: config.siteUrl + '/icons/icon-512x512.png',
+        url: config.siteUrl + '/icons/logo_512.png',
       },
     },
     description: meta_desc,
