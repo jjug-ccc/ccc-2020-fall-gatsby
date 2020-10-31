@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import HomePageTemplate from '../../components/HomePageTemplate'
 
 const HomePagePreview = ({ entry, getAsset }) => {
-  const entryBlurbs = entry.getIn(['data', 'offerings', 'blurbs'])
-  const blurbs = entryBlurbs ? entryBlurbs.toJS() : []
+  const entryContents = entry.getIn(['data', 'sponsors', 'golds', 'silvers'])
+  const contents = entryContents ? entryContents.toJS() : []
 
   const entryTestimonials = entry.getIn(['data', 'testimonials'])
   const testimonials = entryTestimonials ? entryTestimonials.toJS() : []
@@ -14,7 +14,7 @@ const HomePagePreview = ({ entry, getAsset }) => {
       title={entry.getIn(['data', 'title'])}
       meta_title={entry.getIn(['data', 'meta_title'])}
       meta_description={entry.getIn(['data', 'meta_description'])}
-      offerings={{ blurbs }}
+      sponsors={{ contents }}
       testimonials={testimonials}
     />
   )

@@ -14,7 +14,7 @@ const HomePage = ({ data }) => {
         meta_title={frontmatter.meta_title}
         meta_description={frontmatter.meta_description}
         aboutCcc={frontmatter.aboutCcc}
-        offerings={frontmatter.offerings}
+        sponsors={frontmatter.sponsors}
       />
     </Layout>
   )
@@ -46,10 +46,16 @@ export const pageQuery = graphql`
           hashtag
           method
         }
-        offerings {
-          blurbs {
+        sponsors {
+          golds {
             image
             text
+            url
+          }
+          silvers {
+            image
+            text
+            url
           }
         }
       }

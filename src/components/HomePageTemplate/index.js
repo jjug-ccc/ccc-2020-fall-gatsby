@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Offerings from '../Offerings'
+import Sponsors from '../Sponsors'
 import PropTypes from 'prop-types'
 import AboutCcc from "../AboutCcc";
 import AboutJjug from "../AboutJjug";
@@ -9,7 +9,7 @@ import Coc from "../Coc";
 const HomePageTemplate = ({
   title,
   aboutCcc,
-  offerings,
+  sponsors,
   meta_title,
   meta_description,
 }) => (
@@ -39,13 +39,17 @@ const HomePageTemplate = ({
           <div className='columns'>
             <div className='column is-10 is-offset-1'>
               <div className='content'>
-                <h3 className='has-text-weight-semibold is-size-3'>開催概要 / Description</h3>
+                <h3 className='has-text-weight-semibold is-size-3 is-size-4-mobile'>開催概要 / Description</h3>
                 <AboutCcc gridItem={aboutCcc} />
-                <h3 className='has-text-weight-semibold is-size-3'>JJUGについて / About JJUG</h3>
+                <h3 className='has-text-weight-semibold is-size-3 is-size-4-mobile'>JJUGについて / About JJUG</h3>
                 <AboutJjug/>
-                <h3 className='has-text-weight-semibold is-size-3'>JJUG CCCでの行動規範 / JJUG CCC Code of Conduct</h3>
+                <h3 className='has-text-weight-semibold is-size-3 is-size-4-mobile'>JJUG CCCでの行動規範 / JJUG CCC Code of Conduct</h3>
                 <Coc />
-                {/*<Offerings gridItems={offerings.blurbs} />*/}
+                <h3 className='has-text-weight-semibold is-size-3 is-size-4-mobile'>スポンサー / Sponsors</h3>
+                <h4 className='is-size-4 is-size-5-mobile'>Gold</h4>
+                <Sponsors gridItems={sponsors.golds} />
+                <h4 className='is-size-4 is-size-5-mobile'>Silver</h4>
+                <Sponsors gridItems={sponsors.silvers} />
               </div>
             </div>
           </div>
@@ -68,8 +72,9 @@ HomePageTemplate.propTypes = {
     hashtag: PropTypes.string,
     method: PropTypes.string,
   }),
-  offerings: PropTypes.shape({
-    blurbs: PropTypes.array,
+  sponsors: PropTypes.shape({
+    golds: PropTypes.array,
+    silvers: PropTypes.array,
   }),
 };
 
