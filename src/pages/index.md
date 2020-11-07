@@ -10,6 +10,8 @@ aboutCcc:
   organizer: 日本Javaユーザグループ / Japan Java User Group
   date: 2020年11月07日（土） / 7th Nov. 2020 (Sat)
   participationFee: 無料 / Free
+  register: https://jjug.doorkeeper.jp/events/112842
+  schedule: https://confengine.com/jjug-ccc-2020-fall/schedule/rich
   hashtag: （セッションごとのハッシュタグあり / We will also use separate hashtags for each session）
   method: ※今回はオンライン開催になります。 / This conference will be held online. 
 sponsors:

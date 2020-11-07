@@ -43,6 +43,8 @@ export const pageQuery = graphql`
           organizer
           date
           participationFee
+          register
+          schedule
           hashtag
           method
         }

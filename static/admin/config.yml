@@ -16,7 +16,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home-page"}
           - {label: Title, name: title, widget: string}
-          - {label: AboutCcc, name: aboutCcc, widget: object, fields: {label: Description, name: description, widget: string}, {label: DescriptionEn, name: descriptionEn, widget: string}, {label: Organizer, name: organizer, widget: string}, {label: Date, name: date, widget: string}, {label: ParticipationFee, name: participationFee, widget: string}, {label: Hashtag, name: hashtag, widget: string}, {label: Method, name: method, widget: string}}
+          - {label: AboutCcc, name: aboutCcc, widget: object, fields: {label: Description, name: description, widget: string}, {label: DescriptionEn, name: descriptionEn, widget: string}, {label: Organizer, name: organizer, widget: string}, {label: Date, name: date, widget: string}, {label: ParticipationFee, name: participationFee, widget: string}, {label: Register, name: register, widget: string}, {label: Schedule, name: schedule, widget: string}, {label: Hashtag, name: hashtag, widget: string}, {label: Method, name: method, widget: string}}
           - {label: Sponsors, name: sponsors, widget: object, fields: [{label: Golds, name: golds, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}, {label: Url, name: url, widget: string}]}, {label: Silvers, name: silvers, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}, {label: Url, name: url, widget: string}]}]}
           - {label: "Meta Title", name: "meta_title", widget: "string"}
           - {label: "Meta Description", name: "meta_description", widget: "text"}

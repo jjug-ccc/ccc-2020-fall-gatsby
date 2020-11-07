@@ -69,6 +69,8 @@ HomePageTemplate.propTypes = {
     organizer: PropTypes.string,
     date: PropTypes.string,
     participationFee: PropTypes.string,
+    register: PropTypes.string,
+    schedule: PropTypes.string,
     hashtag: PropTypes.string,
     method: PropTypes.string,
   }),
