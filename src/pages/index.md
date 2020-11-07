@@ -35,11 +35,14 @@ sponsors:
     - image: /img/sponsor/ulsystems.png
       text: ウルシステムズ株式会社 
       url: https://www.ulsystems.co.jp
+    - image: /img/sponsor/redhat.png
+      text: レッドハット株式会社 
+      url: https://www.redhat.com/ja/global/japan
   silvers:
-      - image: /img/sponsor/m3.png
-        text: エムスリー株式会社
-        url: https://jobs.m3.com/engineer/
-      - image: /img/sponsor/rakusu.png
-        text: 株式会社ラクス
-        url: https://www.rakus.co.jp/
+    - image: /img/sponsor/m3.png
+      text: エムスリー株式会社
+      url: https://jobs.m3.com/engineer/
+    - image: /img/sponsor/rakusu.png
+      text: 株式会社ラクス
+      url: https://www.rakus.co.jp/
 ---
